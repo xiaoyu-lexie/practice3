@@ -1,8 +1,10 @@
 import faker from 'faker';
+import {Mappable} from './CustomMap'
 
 
-export class User {
+export class User implements Mappable{
   name: string;
+  color: string = 'red';
 
   // after having the following, location is still undefined, we need to give it inital value
   location: {
